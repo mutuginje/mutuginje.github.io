@@ -1,0 +1,163 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+   font-family: 'Varela Round', 'Quicksand', sans-serif;
+  background-color: #f26185;
+}
+
+.postcard {
+  width: 800px;
+  height: 500px;
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  border-radius: 2%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3em;
+  box-shadow: .8em .8em 15px rgba(0,0,0,.3);
+   -ms-transform: rotate(2.5deg); /* IE 9 */
+    -webkit-transform: rotate(2.5deg); /* Chrome, Safari, Opera */
+    transform: rotate(2.5deg);
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5em;
+  color: #f7f7f7;
+  margin-bottom: -15px;
+}
+
+p {
+  display: inline;
+  font-size: 1.3em;
+}
+
+/*animation*/
+.postcard:hover,
+.postcard:active,
+.postcard:focus{
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+
+
+}
+
+/*form*/
+input,
+textarea {
+  border: none;
+  border-radius: 4%;
+  height: 1.9em;
+  padding: .7em;
+  font-size: 1.3em;
+  font-family: 'Varela Round', 'Quicksand', sans-serif;
+}
+
+input:focus,
+textarea:focus {
+   outline-color: pink;
+}
+
+.mail_stamp {
+  width: 100px;
+  float: right;
+}
+
+#address {
+  text-decoration: underline;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+  height: 10em;
+  width: 17em;
+  margin-top: .5em;
+  margin-bottom: 1em;
+}
+
+.push{
+  margin-bottom: 1em;
+  margin-top: .5em;
+}
+
+#recipient_email{
+  margin-top: 4.5em;
+  margin-bottom: 1.5em;
+}
+
+/*footer*/
+footer {
+  margin: 2em auto;
+  text-align: center;
+  font-family: 'Varela Round', 'Quicksand', sans-serif;
+  color: white;
+}
+
+footer p {
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+
+</style>
+<head>
+  <title>Get Your Letter</title>
+</head>
+
+<body>
+  <div class = "wrap">
+    <h1>Love Letter</h1>
+    <div class = "postcard">
+
+      <div class = "letter">
+        <form action="#" method="post" class="message_form">
+          <p class = "push">Dear </p><input type = "text" id = "recipient" name = "recipient_name" placeholder = "Maureen" class = "push"><p> </p><br>
+          <label for = "message">Message</label><br>
+          <textarea id = "message" name = "message_to_recipient" placeholder = "As I sit down to express the feelings that stir within my heart, words seem to fall short in capturing the depth of my love for you. Each moment with you is a symphony of joy and warmth, a melody that plays in the background of my life.
+
+In your presence, I find a comfort that goes beyond words—a sense of belonging that completes the very essence of who I am. Your laughter is the sweetest melody, and your smile, the brightest light in my darkest days.
+
+Our journey together has woven a tapestry of shared experiences, creating a bond that grows stronger with each passing day. Your kindness, understanding, and unwavering support have been the pillars that hold up the foundation of our love.
+
+In the quiet moments, my thoughts inevitably turn to you. It's as if the universe conspired to bring us together, aligning our paths in a beautiful dance of fate. Your touch is the gentle breeze that soothes my soul, and your presence is the home where my heart finds solace.
+
+As we navigate the twists and turns of life, I am grateful for the partnership we've built—a partnership founded on love, trust, and mutual respect. I look forward to the many chapters yet to be written, knowing that with you by my side, every page will be filled with love, laughter, and shared dreams.
+
+In your eyes, I find a reflection of my own happiness, and in your heart, I've discovered a love that is both pure and eternal. You are my confidant, my lover, and my best friend—the one with whom I choose to build a lifetime of memories"></textarea><br>
+          <p>Yours Lovely </p><br>
+          <input type = "text" id = "sender_name" name = "sender" placeholder = "Emmanuel Njeru">
+        </form>
+      </div>
+
+      <div class = "address"> 
+         <img src="images/reen.jpg" alt="">
+        <form action="#" method="post" class="message_form">
+        <input type = "email" id = "recipient_email" name = "recipient_email" placeholder = "maureenwafula259@gmail.com">
+        </form>
+        <p id = "address">Nyahururu,<br>
+          Kenya,<br>
+          Africa.
+        </p>
+      </div>
+      
+    </div>
+  </div>
+  
+  <footer>
+    <p>Lovely crafted by Emmanuel Njeru.</p>
+  </footer>
+  
+</body>

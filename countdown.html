@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>I Love You Forever</title>
+
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('digital-7_mono.ttf') format("truetype");
+        }
+        
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+    <link href="css/default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+    <div id="mainDiv">
+        <div id="content">
+            <div id="code">
+                <span class="comments">/**</span><br/>
+                <span class="space" /><span class="comments">*2024—01-25,</span><br/>
+                <span class="space" /><span class="comments">*2024-01-30.</span><br/>
+                <span class="space" /><span class="comments">*/</span><br/> = <span class="keyword">Mr Emmanuel</span> <br/> = <span class="keyword">Mrs Maureen</span><br/>
+                <span class="comments">// Fell in love</span><br/>Once upon a time in a quaint little town, there lived a young couple named Emma and Daniel. They had been inseparable since the day they met, their love blossoming like a beautiful garden in spring. Their story was a testament to the magic that two hearts could create when they beat in sync.
+
+                One sunny afternoon, Daniel decided to take Emma on a surprise picnic to their favorite meadow. The air was filled with the sweet fragrance of wildflowers, and the sun painted the sky in hues of pink and gold. As they settled on a cozy blanket, Daniel began to share a story.
+                
+                "Emma," he said with a warm smile, "there's something I've been wanting to tell you. It's a story about us, about our journey together." He took her hand in his, their fingers interlocking like the perfect puzzle pieces.
+                
+                Daniel started reminiscing about the first time they met, the laughter they shared, the challenges they overcame, and the countless memories they created together. As he spoke, the love in his eyes reflected the depth of his emotions.
+                
+                The couple laughed and teared up as they relived each beautiful moment. The sun dipped below the horizon, casting a golden glow on their faces, making the scene even more enchanting.
+                
+                As the tale unfolded, Daniel looked into Emma's eyes and whispered, "But the most magical part of this story is yet to come." He reached into his backpack and pulled out a small velvet box. Emma gasped as he opened it to reveal a breathtaking ring.
+                
+                "Emma," Daniel said, his voice filled with sincerity, "this is how I want to propose to you. Surrounded by the beauty of nature, under the warm hues of a setting sun, just like this. Will you make me the happiest person alive and say yes?"
+                
+                Emma, overwhelmed with joy and love, couldn't hold back her tears. With a big smile, she nodded, "Yes, Daniel, a thousand times yes!"
+                
+                And so, under the canvas of the twilight sky, with the symphony of nature as their witness, Daniel and Emma sealed their love with a promise to cherish each other forever. And as the stars sparkled above, the young couple embraced the beginning of a new chapter in their magical love story.
+                
+                The Day you open this countdown and there is no time left, is the day I will propose to you!
+                
+                <br/>
+                <br>
+                <br> I want to say:<br/> Baby, I love you forever;<br/>
+            </div>
+            <div id="loveHeart">
+                <canvas id="garden"></canvas>
+                <div id="words">
+                    <div id="messages">
+                        COUNTDOWN
+                        <div id="elapseClock"></div>
+                    </div>
+                    <div id="loveu">
+                        Made with love by:<br/>
+                        <div class="signature">EMMANUEL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var offsetX = $("#loveHeart").width() / 2;
+        var offsetY = $("#loveHeart").height() / 2 - 55;
+        var together = new Date();
+        together.setFullYear(2019, 04, 01);
+        together.setHours(20);
+        together.setMinutes(0);
+        together.setSeconds(0);
+        together.setMilliseconds(0);
+
+        if (!document.createElement('canvas').getContext) {
+            var msg = document.createElement("div");
+            msg.id = "errorMsg";
+            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+            document.body.appendChild(msg);
+            $("#code").css("display", "none")
+            document.execCommand("stop");
+        } else {
+            setTimeout(function() {
+                startHeartAnimation();
+            }, 5000);
+
+            timeElapse(together);
+            setInterval(function() {
+                timeElapse(together);
+            }, 500);
+
+            adjustCodePosition();
+            $("#code").typewriter();
+        }
+
+        $("#garden").click(function() {
+            window.location.href = "marry-me/index.html";
+        })
+    </script>
+
+</body>
+
+</html>
